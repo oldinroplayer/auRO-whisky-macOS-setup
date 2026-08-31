@@ -85,7 +85,7 @@ It'll detect what's out of date (old keybind fix, missing crash-dialog mitigatio
 
 ## What you'll need
 
-- A Mac with **Apple Silicon** (M1 or later) on **macOS 14 (Sonoma) or newer** — Whisky itself requires both; there's no path through this skill on an Intel Mac.
+- A Mac with **Apple Silicon** (M1 or later) on **macOS 14 (Sonoma) or newer** — Whisky itself requires both; there's no path through this skill on an Intel Mac. Confirmed working as far up as **macOS 26 (Tahoe)** by a real install — the big jump in Apple's own version numbering (14 → 15 → 26) isn't a compatibility gap, "or newer" genuinely means newer.
 - Roughly **15-20GB of free disk space**.
 - A **uaRO account** — the installer download sits behind a login wall on uaRO's own site, so getting the installer file itself is always a manual, logged-in step no AI can do on your behalf.
 

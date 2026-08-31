@@ -6,6 +6,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Version
 
 ## [Unreleased]
 
+## [0.20.2] - 2026-08-31
+
+### Changed
+- `README.md` and `SKILL.md`'s pre-flight macOS-version check now explicitly note that a real install was confirmed working on macOS 26 (Tahoe), not just the literal "macOS 14 or newer" floor — a Discord user had assumed the skill was tied to Sonoma specifically, thrown off by Apple's own version numbering jumping 14 → 15 → 26. Doc clarification only, no behavior change.
+
 ## [0.20.1] - 2026-08-20
 
 ### Changed
