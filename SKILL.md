@@ -1,6 +1,6 @@
 ---
 name: auro-whisky-macos-setup
-version: 0.20.2
+version: 0.20.3
 description: Installs and configures uaRO (a Ragnarok Online private server) on macOS via Homebrew + Whisky + a manually-sourced WhiskyWine runtime — end to end on a fresh Mac. Covers Homebrew, Rosetta 2, Whisky.app, WhiskyWine runtime, bottle creation/config, downloading and running the uaRO installer, FCOM byte-patches for Rosetta compatibility, Wine Gecko pre-install, game config files, building three launcher .app bundles (Patcher, Settings, and an optional skip-patcher Game launcher), and an optional `uaro-cli` command-line helper (kill/launch/repair). Trigger on "install uaRO on Mac", "set up uaRO with Whisky", "uaRO on a new Mac", "whisky uaro install", "uninstall uaRO", or whenever this file is handed to a fresh session on a brand-new machine with the instruction to just run it. Also covers uninstalling/removing an existing install (see the Uninstall / rollback section).
 ---
 
@@ -1333,7 +1333,20 @@ Then walk the user through these four points, every time, regardless of how the 
 
 ## Optional: AzzyAI (mercenary/homunculus auto-attack AI)
 
-AzzyAI is a third-party Lua AI that auto-fights with a mercenary or homunculus instead of needing manual commands every fight. It's not part of the core uaRO install and this file doesn't duplicate its setup — full install steps (download source, exactly where the files go, how to activate it in-game, how to verify it worked) plus the fix for uaRO's own known "installs fine, never attacks" private-server quirk are in [`AZZYAI_FIXES.md`](./AZZYAI_FIXES.md) in this same repo. If a Claude Code session is doing this, the companion `azzyai-uaro-fix` skill drives it end to end — just ask to install or fix AzzyAI.
+AzzyAI is a third-party Lua AI that can make a mercenary or homunculus automatically fight nearby monsters.
+
+### What AzzyAI does
+
+AzzyAI makes your **mercenary** or **homunculus** automatically fight nearby monsters.
+
+- Searches about **12 cells** when you stand still, or **7 cells** while moving.
+- By default, it may ignore monsters that stand still because they may be plants.
+- The uaRO skill applies the compatibility fixes needed for it to detect and attack monsters correctly.
+
+Would you like to install AzzyAI now? **Yes / No**
+
+- **Yes** — read and follow [`AZZYAI_FIXES.md`](./AZZYAI_FIXES.md) from Step 1 through Step 10, stopping for the user's confirmation after each step as usual.
+- **No** — leave AzzyAI uninstalled and finish the uaRO setup.
 
 ## Troubleshooting reference
 

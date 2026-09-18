@@ -4,7 +4,13 @@
 
 [`SKILL.md`](./SKILL.md) is a self-contained playbook written *for an AI coding agent* (Claude Code, OpenAI Codex, or GitHub Copilot) to read and execute, not for a human to follow by hand. Hand it the file, say "install uaRO," and it drives the whole thing end to end. Curious what that actually involves? Open `SKILL.md` — it's all in there.
 
-Want AzzyAI (the third-party mercenary/homunculus auto-attack AI) too — installing it fresh, or already have it but it won't actually attack anything? Both are a separate, later-stage topic covered in [`AZZYAI_FIXES.md`](./AZZYAI_FIXES.md), not this file.
+## AzzyAI is now supported
+
+The uaRO installation skill now includes built-in support for **AzzyAI**.
+
+AzzyAI is an optional add-on that allows your **mercenary** or **homunculus** to automatically find and attack monsters while you play.
+
+When setting up uaRO from scratch, the skill will ask whether you also want to install AzzyAI after the main game installation is complete.
 
 ## The problem this solves
 
@@ -73,15 +79,45 @@ A command-line tool (`claude`, `codex`, or `copilot`) that you type into Mac's b
    ```
 3. **From there, just answer what it asks.** It'll tell you before anything you need to personally do — logging into the uaRO download page, clicking through the installer wizard, typing your Mac password if macOS asks for it — and it won't move to the next step without checking with you first.
 
-## Updating an existing install
+## Updating an existing install or adding AzzyAI
 
-Already installed uaRO with this skill before? Open a session the same way as above (either option), then paste this whole thing:
+Already installed uaRO with this skill before? Open an AI session the same way as above, then choose the option you need below.
+
+**Update the existing uaRO / Whisky installation**
+
+Use this if uaRO is already installed and you want the AI to check for newer fixes:
 
 ```
-Fetch SKILL.md from https://github.com/jirukouya/auRO-whisky-macOS-setup — I already have uaRO installed, run Step 2a to check my existing install against the latest fixes, and apply anything that's missing.
+Fetch SKILL.md from https://github.com/jirukouya/auRO-whisky-macOS-setup and check my existing uaRO installation against the latest fixes. Apply only the fixes that are missing.
 ```
 
-It'll detect what's out of date (old keybind fix, missing crash-dialog mitigation, etc.) and only touch what's actually missing — it won't reinstall anything that's already working. See [CHANGELOG.md](./CHANGELOG.md) for what's changed release to release.
+The skill will detect what's out of date and only touch what's actually missing — it won't reinstall anything that's already working. See [CHANGELOG.md](./CHANGELOG.md) for what's changed release to release.
+
+**Install AzzyAI**
+
+Use this if uaRO is already installed and you want your mercenary or homunculus to automatically attack monsters:
+
+```
+Please read and follow this AzzyAI guide step by step:
+
+https://github.com/jirukouya/auRO-whisky-macOS-setup/blob/main/AZZYAI_FIXES.md
+
+I already have uaRO installed. Help me install and configure AzzyAI for my mercenary or homunculus. I am not technical, so explain each step in simple language, make a backup before changing existing files, and stop for my confirmation before continuing.
+```
+
+**Fix AzzyAI**
+
+Use this if AzzyAI is already installed, but your mercenary or homunculus follows you without attacking:
+
+```
+Please read and follow this AzzyAI guide:
+
+https://github.com/jirukouya/auRO-whisky-macOS-setup/blob/main/AZZYAI_FIXES.md
+
+AzzyAI is already installed on my uaRO setup, but my mercenary or homunculus follows me without attacking. Check the installation first, then apply the required uaRO targeting fixes. I am not technical, so explain each step simply and stop for my confirmation before continuing.
+```
+
+The AI will guide you through the steps and will tell you when you need to log in to the game and type `/merai` or `/hoai`.
 
 ## What you'll need
 

@@ -6,6 +6,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Version
 
 ## [Unreleased]
 
+## [0.20.3] - 2026-09-18
+
+### Changed
+- `README.md` now clearly explains that the uaRO skill supports AzzyAI and provides separate beginner-friendly prompts for updating uaRO, installing AzzyAI, or fixing an AzzyAI setup that follows but never attacks.
+- `SKILL.md` now offers AzzyAI after the core uaRO installation is complete, with a short explanation of its default behavior and an explicit Yes/No choice before the optional setup begins.
+
 ## [0.20.2] - 2026-08-31
 
 ### Changed
