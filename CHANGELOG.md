@@ -6,6 +6,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Version
 
 ## [Unreleased]
 
+## [0.20.4] - 2026-09-18
+
+### Changed
+- `README.md` now presents the AzzyAI announcement as a single `v0.20.3` heading and uses heading-level anchors for the existing-install, AzzyAI installation, and AzzyAI repair sections.
+
 ## [0.20.3] - 2026-09-18
 
 ### Changed

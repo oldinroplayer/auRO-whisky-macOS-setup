@@ -4,13 +4,15 @@
 
 [`SKILL.md`](./SKILL.md) is a self-contained playbook written *for an AI coding agent* (Claude Code, OpenAI Codex, or GitHub Copilot) to read and execute, not for a human to follow by hand. Hand it the file, say "install uaRO," and it drives the whole thing end to end. Curious what that actually involves? Open `SKILL.md` — it's all in there.
 
-## AzzyAI is now supported
+## New in v0.20.3: AzzyAI is now supported
 
 The uaRO installation skill now includes built-in support for **AzzyAI**.
 
 AzzyAI is an optional add-on that allows your **mercenary** or **homunculus** to automatically find and attack monsters while you play.
 
 When setting up uaRO from scratch, the skill will ask whether you also want to install AzzyAI after the main game installation is complete.
+
+[See the AzzyAI installation and repair options below.](#updating-an-existing-install-or-adding-azzyai)
 
 ## The problem this solves
 
@@ -83,7 +85,7 @@ A command-line tool (`claude`, `codex`, or `copilot`) that you type into Mac's b
 
 Already installed uaRO with this skill before? Open an AI session the same way as above, then choose the option you need below.
 
-**Update the existing uaRO / Whisky installation**
+### Update the existing uaRO / Whisky installation
 
 Use this if uaRO is already installed and you want the AI to check for newer fixes:
 
@@ -93,7 +95,7 @@ Fetch SKILL.md from https://github.com/jirukouya/auRO-whisky-macOS-setup and che
 
 The skill will detect what's out of date and only touch what's actually missing — it won't reinstall anything that's already working. See [CHANGELOG.md](./CHANGELOG.md) for what's changed release to release.
 
-**Install AzzyAI**
+### Install AzzyAI
 
 Use this if uaRO is already installed and you want your mercenary or homunculus to automatically attack monsters:
 
@@ -105,7 +107,7 @@ https://github.com/jirukouya/auRO-whisky-macOS-setup/blob/main/AZZYAI_FIXES.md
 I already have uaRO installed. Help me install and configure AzzyAI for my mercenary or homunculus. I am not technical, so explain each step in simple language, make a backup before changing existing files, and stop for my confirmation before continuing.
 ```
 
-**Fix AzzyAI**
+### Fix AzzyAI
 
 Use this if AzzyAI is already installed, but your mercenary or homunculus follows you without attacking:
 
